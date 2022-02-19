@@ -1,0 +1,177 @@
+body {
+  margin: 0 auto;
+
+}
+
+/*Header section*/
+.navigation {
+	width: 90%;
+	margin: 0 auto;
+}
+
+header {
+  background: #1AA2C4;
+  display: grid;
+}
+
+
+
+nav {
+  float: right;
+}
+
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+nav a:hover {
+color: green;
+}
+
+
+img.logo {
+    max-width: 150px;
+    max-height: 100px;
+    float: left;
+}
+
+img.f-logo {
+  max-width: 100px;
+  max-height: 100px;
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  margin: 15px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: content;
+  padding: 1em;
+}
+
+
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+img.c-2016 {
+  object-fit: cover;
+  width: 100%;
+  height: 30vh;
+}
+
+img.c-2017 {
+  object-fit: cover;
+  width: 100%;
+  height: 30vh;
+}
+
+img.c-2018 {
+  object-fit: cover;
+  width: 100%;
+  height: 30vh;
+}
+
+
+
+/*Footer Section*/
+#footer {
+  display: flex;
+  background-color: #1AA2C4;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.elinks a:hover {
+  color: green;
+}
+
+.external-links img:hover {
+  opacity: .5;
+  transition: .9s;
+}
+
+.elinks {
+    list-style: none;
+    padding-right: 20px;
+}
+
+.social {
+  max-width: 50px;
+  max-height: 50px;
+  float: right;
+  padding-top: 20px;
+}
+
+
+/*Media Queries*/
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    align-items: stretch;
+
+  }
+  .column {
+    width: 30%;
+    height: auto;
+    padding-left: 30px;
+
+  }
+
+  .social {
+    display: none;
+    }
+}
+
+
+@media screen and (max-width: 999px){
+.title {
+  display: none;
+  }
+
+.elinks {
+  display: none;
+}
+
+}
